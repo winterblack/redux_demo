@@ -1,6 +1,6 @@
-## Redux Demo
+# Redux Demo
 
-# Stage 1 - Node Package Manager and Webpack
+## Stage 1 - Node Package Manager and Webpack
 
 `npm init --yes`
 
@@ -8,7 +8,7 @@
 
 set up `webpack.config.js`
 
-# Stage 2 - Set Up your Entry File and Index HTML
+## Stage 2 - Set Up your Entry File and Index HTML
 
 create `entry.jsx`
 
@@ -25,7 +25,7 @@ Time to start using `webpack --watch`. Leave it on whenever you're working on yo
 
 You should be able to see your react component now.
 
-# Stage 3 - Create your Actions, Reducers, and Store
+## Stage 3 - Create your Actions, Reducers, and Store
 
 `touch actions/some_actions.js`
 
@@ -47,7 +47,7 @@ create `store.js`
 
 To test this stage, set window.store to your store. You can test store.dispatch() and store.getState()
 
-# Stage 4 - Create your React Components
+## Stage 4 - Create your React Components
 
 `mkdir components/some_component`
 
@@ -79,7 +79,7 @@ A class component looks like this:
 
 Export your component and import it in your entry file so you can see it on your web page. If you have a lot of components you could break your index component out into a separate file and just import that into your entry file.
 
-# Stage 5 - Connecting your Components to your Store
+## Stage 5 - Connecting your Components to your Store
 
 This is the reason to use Redux. It's so cool!
 
@@ -122,7 +122,7 @@ In your component_connect:
 
 Amazing!
 
-# One last thing - Combine Reducers
+## One last thing - Combine Reducers
 
 At some point you might have more than one reducer, and you'll want to combine them, because your store only takes one reducer.
 
