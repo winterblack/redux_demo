@@ -24,10 +24,8 @@ This is particularly useful when taking in an object as an argument. For example
 
     function Human({ name, height }) {
       return (
-        <div>
-          <div>{ name }</div>
-          <div>{ height }</div>
-        </div>
+        console.log(name)
+        console.log(height)
       )
     }
 
@@ -39,7 +37,7 @@ This function could take in an object with any number of keys, but it will autom
       argument
     )
 
-This is a function that returns what's inside the ().
+This is a function that returns what's inside the `()`.
 
 You don't even need the `()`
 
