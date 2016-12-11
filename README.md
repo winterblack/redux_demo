@@ -1,5 +1,54 @@
 # Redux Demo
 
+## Stage 0 - EcmaScript 6
+
+### Import instead of require
+
+`import Constant from 'file'`
+
+Imports whatever was set as `export default`. Since it's just a default export, you can name it whatever you want when you import it.
+
+`import { Constant } from 'file'`
+
+Imports a constant from that file with that name. This is related to destructring objects.
+
+### Destructuring Objects
+
+In ES6 you can destructure objects to define variables. For example.
+
+    var object = { a: 1, b: 2 }
+    var { a } = object
+    a //=> 1
+
+This is particularly useful when taking in an object as an argument. For example:
+
+    function Human({ name, height }) {
+      return (
+        <div>
+          <div>{ name }</div>
+          <div>{ height }</div>
+        </div>
+      )
+    }
+
+This function could take in an object with any number of keys, but it will automatically extract the name and height keys.
+
+### Return Functions
+
+    var returnFunction = (argument) => (
+      argument
+    )
+
+This is a function that returns what's inside the ().
+
+You don't even need the `()`
+
+    var returnFunction = (argument) => argument
+
+You don't need those `()` either (unless the function takes more than one argument, then you do).
+
+    var returnFunction = argument => argument
+
 ## Stage 1 - Node Package Manager and Webpack
 
 `npm init --yes`
